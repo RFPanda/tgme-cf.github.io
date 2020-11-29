@@ -15,10 +15,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1e96c8">
-    <meta name="apple-mobile-web-app-title" content="tgme.ga">
+    <meta name="apple-mobile-web-app-title" content="tgme.cf">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="author" content="Khasanov A.">
-    <meta name="keywords" content="Telegram, Freedom, tgme.ga">
+    <meta name="keywords" content="Telegram, Freedom, tgme.cf">
     <meta name="description" content="Рабочая телеграм ссылка">
     <meta name="msapplication-TileColor" content="#1e96c8">
     <meta name="theme-color" content="#1e96c8">
@@ -119,7 +119,7 @@
         if(document.getElementsByClassName("getinput")[0].value.length >= 3) {
             document.getElementsByClassName("btn_getLink")[0].classList.add("btn_getLinkShow");
         }
-        if(document.getElementsByClassName("getinput")[0].value.startsWith("tgme.ga/")) {
+        if(document.getElementsByClassName("getinput")[0].value.startsWith("tgme.cf/")) {
             document.getElementsByClassName("btn_goTestLink")[0].style.display = "block";
             document.getElementsByClassName("btn_goTestLink")[0].style.opacity = "1";
         }
@@ -253,7 +253,7 @@
     function createLink() {
         var currentLink = document.getElementsByClassName("getinput")[0].value;
         if (document.getElementsByClassName("getinput")[0].value.charAt(0) === '@') {
-            document.getElementsByClassName("getinput")[0].value = 'tgme.ga/' + currentLink.slice(1);
+            document.getElementsByClassName("getinput")[0].value = 'tgme.cf/' + currentLink.slice(1);
             var clipboard = new ClipboardJS('.btn_getLink', {
                 target: function() {
                     return document.getElementsByClassName("getinput")[0];
@@ -264,7 +264,7 @@
         }
         if (currentLink.startsWith("http")) {
             var l = new URL(currentLink).pathname;
-            document.getElementsByClassName("getinput")[0].value = 'tgme.ga' + l;
+            document.getElementsByClassName("getinput")[0].value = 'tgme.cf' + l;
             var clipboard = new ClipboardJS('.btn_getLink', {
                 target: function() {
                     return document.getElementsByClassName("getinput")[0];
@@ -276,7 +276,7 @@
         if (currentLink.startsWith("t.me/")) {
             var l = 'https://' + currentLink;
             l = new URL(l).pathname
-            document.getElementsByClassName("getinput")[0].value = 'tgme.ga' + l;
+            document.getElementsByClassName("getinput")[0].value = 'tgme.cf' + l;
             var clipboard = new ClipboardJS('.btn_getLink', {
                 target: function() {
                     return document.getElementsByClassName("getinput")[0];
@@ -285,7 +285,7 @@
             setTimeout(function(){document.getElementsByClassName("getinput")[0].blur();}, 10);
             setCookie('tglink', document.getElementsByClassName("getinput")[0].value);
         }
-        if (currentLink.startsWith("tgme.ga/")) {
+        if (currentLink.startsWith("tgme.cf/")) {
             var clipboard = new ClipboardJS('.btn_getLink', {
                 target: function() {
                     return document.getElementsByClassName("getinput")[0];
@@ -302,7 +302,7 @@
                var l = 'https://' + currentLink;
             }
             l = new URL(l).pathname
-            document.getElementsByClassName("getinput")[0].value = 'tgme.ga/joinchat/' + l.split('/')[2];
+            document.getElementsByClassName("getinput")[0].value = 'tgme.cf/joinchat/' + l.split('/')[2];
             var clipboard = new ClipboardJS('.btn_getLink', {
                 target: function() {
                     return document.getElementsByClassName("getinput")[0];
