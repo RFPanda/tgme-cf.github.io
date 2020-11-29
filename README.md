@@ -1,8 +1,8 @@
-# [Telegram redirect](http://tgme.ga)
+# [Telegram redirect](http://tgme.cf)
 
-**When t.me/ doesn't work - tgme.ga/ works**
+**When t.me/ doesn't work - tgme.cf/ works**
 
-**Dev: tgme.ga/rfpanda**
+**Dev: tgme.cf/rfpanda**
 
 [![1](https://github.com/RFPanda/tgme.github.io/blob/main/assets/1.jpeg)](https://tgme.cf)
 [![2](https://github.com/RFPanda/tgme.github.io/blob/main/assets/2.jpeg)](https://tgme.cf)
