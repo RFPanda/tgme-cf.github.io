@@ -1,4 +1,4 @@
-# [Telegram redirect](http://tgme.cf)
+# [Telegram redirect](https://tgme.cf)
 
 **When t.me/ doesn't work - tgme.cf/ works**
 
